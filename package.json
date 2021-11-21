@@ -3,13 +3,14 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "heroku-postbuild": "cd ./client && npx parcel build index.html",
+    "start": "node server/index"
   },
   "devDependencies": {
     "parcel": "latest"
   },
   "dependencies": {
-    "ethers": "^5.5.1"
+    "ethers": "^5.5.1",
+    "express": "^4.17.1"
   }
 }
