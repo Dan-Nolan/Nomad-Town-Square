@@ -1,4 +1,7 @@
 import { ethers } from "ethers";
+import jsCookie from 'js-cookie';
+
+console.log('profile test', jsCookie.get('x-nomad-profile'));
 
 const { ethereum } = window;
 const ADDRESS_PERMISSION_PREFIX = "0x4b80742d0000000082ac0000";
