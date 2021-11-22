@@ -5,4 +5,9 @@ if(!profile) {
     window.location = "https://mynomad.quest";
 }
 
-// if
+const image = document.createElement("img"); 
+const imageUrl = new URL('townsquare-inventory-1.png', import.meta.url);
+image.src = imageUrl;
+image.classList.add("inventory");
+
+document.body.appendChild(image);
